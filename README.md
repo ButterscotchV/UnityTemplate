@@ -18,7 +18,7 @@ Replace `/abs/path/to/.gitattributes` with the absolute path to your `.gitattrib
 
 ```bash
 git filter-branch --index-filter "cp /abs/path/to/.gitattributes . && git add .gitattributes" --tag-name-filter cat --prune-empty -- --all
-git lfs migrate import --everything
+git lfs migrate import --everything --fixup
 ```
 
 ## Unity Git Configuration
